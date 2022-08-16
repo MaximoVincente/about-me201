@@ -3,19 +3,19 @@
 console.log('web is running');
 
 let nam = prompt('What is your name?');
-let user = prompt('Is this your first time visiting this page?');
+console.log(nam);
 
+let user = prompt('Is this your first time visiting this page?');
 if (typeof (user) === 'string') {
   user = user.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-
 //If its not the first time alert Welcome back! or If first time, alert: Yay! nice to meet you
 if (user === 'no') {
-  alert('Welcome Back!');
-  console.log(user);
+  alert('Welcome Back! ' + nam);
+  console.log('Has visited the page before');
 } else if (user === 'yes') {
   alert ('Yay! nice to meet you ' + nam);
-  console.log(nam);
+  console.log('First time visiting');
 }
 
 //Ask if user likes technology
@@ -26,10 +26,10 @@ if (typeof (tech) === 'string') {
 // If yes, alert: Me too! else if no, alert: not for long!
 if (user === 'no') {
   alert('Not for long!');
-  console.log(user);
+  console.log('not agreed');
 } else if (user === 'yes') {
-  alert('Me too!' + nam);
-  console.log(nam);
+  alert('Me too! ' + nam);
+  console.log('agreed');
 }
 
 //Ask if user likes technology
@@ -41,9 +41,11 @@ if (typeof (career) === 'string') {
 switch (career) {
 case 'yes':
   alert('You\'re on the right path!');
+  console.log('agreed');
   break;
 case 'no':
   alert('I think you should consider it :)');
+  console.log('not agreed');
   break;
 }
 
@@ -56,8 +58,27 @@ if (typeof (outdoors) === 'string') {
 switch (career) {
 case 'yes':
   alert('Nice! I\'m excited to hear about your favorite outdoor places');
+  console.log('agreed');
   break;
 case 'no':
   alert('Aw :(');
+  console.log('not agreed');
+  break;
+}
+
+//Ask if user likes pizza
+let food = prompt('Do you like pizza?');
+if (typeof (food) === 'string') {
+  food = food.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
+}
+//in the case of yes, alert: "Same! Especially NY style pizza!", in the case of no, alert:"That's ok, I'm sure there's other food we have in common :)"
+switch (food) {
+case 'yes':
+  alert('Same! Especially NY style pizza!');
+  console.log('agreed');
+  break;
+case 'no':
+  alert('That\'s ok, I\'m sure there\'s other food we have in common : ) ');
+  console.log('not agreed');
   break;
 }
