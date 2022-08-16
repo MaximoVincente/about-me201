@@ -5,80 +5,81 @@
 let nam = prompt('What is your name?');
 // console.log(nam);
 
+//Ask user if I am choosing Javascript for Code 401
 let path = prompt('Hello, ' + nam + ' Am I doing Javascript for Code 401?');
 if (typeof (path) === 'string') {
-  path = user.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
+  path = path.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-//If its not the first time alert Welcome back! or If first time, alert: Yay! nice to meet you
+//If "yes" is incorrect, if "no", it is correct
 if (path === 'no') {
-  alert('I chose the Java Route');
-//   console.log('Incorrect');
-} else if (path === 'yes') {
+//   console.log('Correct!');
   alert ('Correct!');
-//   console.log('Correct');
+} else if (path === 'yes') {
+//   alert ('Incorrect!');
+//   console.log('Incorrect');
 }
 
-//Ask if user likes technology
-let tech = prompt('Do you enjoy technology?');
+//Ask if user if Google is my favorite tech company
+let tech = prompt('Is Google my favorite Tech Company?');
 if (typeof (tech) === 'string') {
   tech = tech.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-// If yes, alert: Me too! else if no, alert: not for long!
-if (user === 'no') {
-  alert('Not for long!');
-//   console.log('not agreed');
-} else if (user === 'yes') {
-  alert('Me too! ' + nam);
-//   console.log('agreed');
+// If yes, "Correct"
+if (tech === 'no') {
+//   alert('Incorrect!');
+//   console.log('Incorrect');
+} else if (tech === 'yes') {
+  alert('Correct!');
+//   console.log('Correct');
 }
 
-//Ask if user likes technology
-let career = prompt('Are you a Software Developer, or interested in that field?');
+//Ask user if becoming a Software developer for Google is my dream job
+let career = prompt('Is becoming a Dev for Google my dream job?');
 if (typeof (career) === 'string') {
   career = career.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-//in the case of yes, alert: "you're on the right path!", in the case of no, alert:"I think you should consider it :)"
+//In case of yes, Correct
 switch (career) {
 case 'yes':
-  alert('You\'re on the right path!');
-  //   console.log('agreed');
+  alert('Correct!');
+  //   console.log('Correct');
   break;
 case 'no':
-  alert('I think you should consider it :)');
-  //   console.log('not agreed');
+//   alert('Incorrect!');
+  //   console.log('Incorrect');
   break;
 }
 
-//Ask if user likes the outdoors
-let outdoors = prompt('Do you enjoy the outdoors?');
+//Ask if I ever been to Yosemite Nattional Park
+let outdoors = prompt('Have I ever visited Yosemite National Park?');
 if (typeof (outdoors) === 'string') {
   outdoors = outdoors.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-//in the case of yes, alert: "Nice! I'm excited to hear about your favorite outdoor places", in the case of no, alert:"Aw :("
-switch (career) {
+//In case of no, Correct
+switch (outdoors) {
 case 'yes':
-  alert('Nice! I\'m excited to hear about your favorite outdoor places');
-  //   console.log('agreed');
+//   alert('Incorrect');
+  //   console.log('Incorrect');
   break;
 case 'no':
-  alert('Aw :(');
-  //   console.log('not agreed');
+  alert('Correct!');
+  //   console.log('Correct');
   break;
 }
 
-//Ask if user likes pizza
-let food = prompt('Do you like pizza?');
+//Ask if Cheeseburger is my favorite food
+let food = prompt('Do I consider Cheeseburger my favorite food?');
 if (typeof (food) === 'string') {
   food = food.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
-//in the case of yes, alert: "Same! Especially NY style pizza!", in the case of no, alert:"That's ok, I'm sure there's other food we have in common :)"
+//in the case of no, Correct
 switch (food) {
 case 'yes':
-  alert('Same! Especially NY style pizza!');
+//   alert('Incorrect!');
   //   console.log('agreed');
   break;
 case 'no':
-  alert('That\'s ok, I\'m sure there\'s other food we have in common : ) ');
-  //   console.log('not agreed');
+  alert('Correct!');
+  //   console.log('Correct');
   break;
 }
