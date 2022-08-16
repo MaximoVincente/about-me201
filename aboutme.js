@@ -3,10 +3,12 @@
 // console.log('testing site after adding all files');
 
 let nam = prompt('What is your name?');
+alert ('Hello ' + nam + ', really nice to meet you! We will start with some yes or no questions about myself :)');
 // console.log(nam);
+document.write('Hey ' + nam + '! Thank you for answering the questions, and if you had some incorrect, No Worries! You will get to know more about myself in this page. Enjoy!');
 
 //Ask user if I am choosing Javascript for Code 401
-let path = prompt('Hello, ' + nam + ' Am I doing Javascript for Code 401?');
+let path = prompt(' Am I doing Javascript for Code 401?');
 if (typeof (path) === 'string') {
   path = path.toLowerCase(); // reassigns user variable to a lowercase string (if it is already a string).
 }
