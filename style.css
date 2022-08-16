@@ -1,0 +1,47 @@
+h1{
+    background-color: rgba(79, 131, 113, 0.546);
+    font-size: 60px;
+    text-align: center;
+    border: 10px solid darkgray;
+    border-style: groove;
+    margin: -8px;
+    padding: 50px;
+}
+
+body{
+    background-color: rgb(110, 184, 158);
+}
+
+.user_message{
+    font-weight: bolder;
+    color: rgb(6, 61, 6);
+    font-style: italic;
+    border: 5px;
+    border-style: groove;
+    border-color: rgb(84, 178, 147);
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:start;
+    background-color: rgb(141, 205, 183);
+    margin: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.bio{
+    border: 10px;
+    border-style:groove;
+    background-color: rgb(141, 205, 183);
+    border-color:rgb(141, 205, 183);
+    margin-right: 600px;
+    margin-left: -8px;
+    margin-top: -8px;
+    color: rgb(25, 30, 34);
+    font-size: larger;
+    padding: 10px;
+    text-align: start;
+    display: inline-block;
+
+}
