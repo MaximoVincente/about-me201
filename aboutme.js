@@ -1,7 +1,5 @@
 'use strict'; //strict syntax
 
-// console.log('testing site after adding all files');
-
 let nam = prompt('What is your name?');
 alert ('Hello ' + nam + ', really nice to meet you! We will start with some yes or no questions about myself :)');
 // console.log(nam);
@@ -17,7 +15,6 @@ if (path === 'no') {
 //   console.log('Correct!');
   alert ('Correct!');
 } else if (path === 'yes') {
-//   alert ('Incorrect!');
 //   console.log('Incorrect');
 }
 
@@ -28,7 +25,6 @@ if (typeof (tech) === 'string') {
 }
 // If yes, "Correct"
 if (tech === 'no') {
-//   alert('Incorrect!');
 //   console.log('Incorrect');
 } else if (tech === 'yes') {
   alert('Correct!');
@@ -47,8 +43,6 @@ case 'yes':
   //   console.log('Correct');
   break;
 case 'no':
-//   alert('Incorrect!');
-  //   console.log('Incorrect');
   break;
 }
 
@@ -60,8 +54,6 @@ if (typeof (outdoors) === 'string') {
 //In case of no, Correct
 switch (outdoors) {
 case 'yes':
-//   alert('Incorrect');
-  //   console.log('Incorrect');
   break;
 case 'no':
   alert('Correct!');
@@ -77,8 +69,6 @@ if (typeof (food) === 'string') {
 //in the case of no, Correct
 switch (food) {
 case 'yes':
-//   alert('Incorrect!');
-  //   console.log('agreed');
   break;
 case 'no':
   alert('Correct!');
