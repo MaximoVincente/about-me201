@@ -25,11 +25,11 @@ for (let i = 0; i < questions.length; i++){//questions.length will iterate throu
 }
 
 //This loop prompts the user to guess the number
-let number = 9;
+let number = Math.random();
 for(let i = 0; i < 4; i++){ //the loop will allow the user to attempt 4 times if wrong
   let guess = parseInt(prompt('Guess what number I am thinking of :)'));
   console.log('number of attempts');
-  if (guess === number){
+  if (guess === Math.random()){
     alert('Correct!');
     score ++;
     break; // if the user guessed right, then the loop will break
@@ -41,7 +41,7 @@ for(let i = 0; i < 4; i++){ //the loop will allow the user to attempt 4 times if
     alert('Not a number');
   }
 }
-alert('The number was 9');
+alert('The number was ' + number);
 
 //This loop prompts the user to guess one of the states within the array
 let states = ['new york', 'massachusetts', 'rhode island', 'north carolina', 'new hampshire'];
