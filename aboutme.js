@@ -65,4 +65,4 @@ for (let i = 0; i < 6; i++){//the user has 6 attempts to guess right
 }
 alert('These were all the possible answers: New york, Massachussetts, Rhode Island, North Carolina, New hampshire');
 alert('You scored ' + score + ' out of 7'); //this alert will display how many correct answers the user had
-//Test for duplicate
+
