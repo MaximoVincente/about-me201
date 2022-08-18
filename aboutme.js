@@ -6,6 +6,16 @@ let nam = prompt('What is your name?');
 alert ('Hello ' + nam + ', really nice to meet you! We will start with some yes or no questions about myself :)');
 document.write('Hey ' + nam + '! Thank you for answering the questions, and if you had some incorrect, No Worries! You will get to know more about myself in this page. Enjoy!'); // Displays greetings message to user on main page
 
+function fiveQuestionAnswer (quest, answ) {
+  let response = prompt(quest);
+  if (response.toLowerCase() === answ.toLowerCase()) {
+    score++;
+    return 'Correct!';
+  } else{
+    return 'Wrong!';
+  }
+}
+
 //This Array stores the first 5 questions asked to the user
 let questions = ['Am I doing Javascript for Code 401?', 'Is Google my favorite Tech Company?',
   'Is becoming a Dev for Google my dream job?', 'Have I ever visited Yosemite National Park?',
@@ -14,14 +24,8 @@ let answers = ['no','yes', 'yes', 'no', 'no']; //This array stores the answers o
 
 //This for loop goes through the five questions with the user
 for (let i = 0; i < questions.length; i++){//questions.length will iterate through every index in the array
-  let response = prompt(questions[i]);
+  alert(fiveQuestionAnswer(questions[i], answers[i]));
   console.log(answers[i]);
-  if (response.toLowerCase() === answers[i]) {//if array question [0] equals to array answers [0] then correct, and continously does the same through ecery array stored
-    alert('Correct!');
-    score ++;//score count for the 5 questions
-  }else {
-    alert('Wrong!');
-  }
 }
 
 //This loop prompts the user to guess the number
