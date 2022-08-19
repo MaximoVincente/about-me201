@@ -17,36 +17,36 @@ function fiveQuestionAnswer(quest, answ) {
   }
 }
 
+
 //This Array stores the first 5 questions asked to the user
 let questions = ['Am I doing Javascript for Code 401?', 'Is Google my favorite Tech Company?',
   'Is becoming a Dev for Google my dream job?', 'Have I ever visited Yosemite National Park?',
-  'Do I consider Cheeseburger my favorite food?'];
-let answers = ['no', 'yes', 'yes', 'no', 'no']; //This array stores the answers of the first five questions
+  'Do I consider Cheeseburger my favorite food?', 'What is my favorite number?'];
+let answers = ['no', 'yes', 'yes', 'no', 'no', 9]; //This array stores the answers of the first five questions
 
 //This for loop goes through the five questions with the user
-for (let i = 0; i < questions.length; i++) {//questions.length will iterate through every index in the array
+for (let i = 0; i < questions.length - 1; i++) {//questions.length will iterate through every index in the array
   alert(fiveQuestionAnswer(questions[i], answers[i]));
   console.log(answers[i]);
 }
 
 //This loop prompts the user to guess the number
-let number = Math.random();
 for (let i = 0; i < 4; i++) { //the loop will allow the user to attempt 4 times if wrong
-  let guess = parseInt(prompt('Guess what number I am thinking of :)'));
+  let guess = parseInt(prompt(questions[5]));
   console.log('number of attempts');
-  if (guess === Math.random()) {
+  if (guess === answers[5]) {
     alert('Correct!');
     score++;
     break; // if the user guessed right, then the loop will break
-  } else if (guess > number) {
+  } else if (guess > answers[5]) {
     alert('TOO HIGH!');
-  } else if (guess < number) {
+  } else if (guess < answers[5]) {
     alert('too low');
   } else {
     alert('Not a number');
   }
 }
-alert('The number was ' + number);
+alert('The number was ' + answers[5] + '!');
 
 //This loop prompts the user to guess one of the states within the array
 let states = ['new york', 'massachusetts', 'rhode island', 'north carolina', 'new hampshire'];
