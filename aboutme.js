@@ -7,7 +7,7 @@ alert('Hello ' + nam + ', really nice to meet you! We will start with some yes o
 document.write('Hey ' + nam + '! Thank you for answering the questions, and if you had some incorrect, No Worries! You will get to know more about myself in this page. Enjoy!'); // Displays greetings message to user on main page
 
 //Function for  first five Questions and answers
-function fiveQuestionAnswer(quest, answ) {
+function questionsAnswer(quest, answ) {
   let response = prompt(quest);
   if (response.toLowerCase() === answ.toLowerCase()) {
     score++;
@@ -26,7 +26,7 @@ let answers = ['no', 'yes', 'yes', 'no', 'no', 9]; //This array stores the answe
 
 //This for loop goes through the five questions with the user
 for (let i = 0; i < questions.length - 1; i++) {//questions.length will iterate through every index in the array
-  alert(fiveQuestionAnswer(questions[i], answers[i]));
+  alert(questionsAnswer(questions[i], answers[i]));
   console.log(answers[i]);
 }
 
@@ -51,7 +51,7 @@ alert('The number was ' + answers[5] + '!');
 //This loop prompts the user to guess one of the states within the array
 let states = ['new york', 'massachusetts', 'rhode island', 'north carolina', 'new hampshire'];
 for (let i = 0; i < 6; i++) {//the user has 6 attempts to guess right
-  let resp = prompt('Guess a state that I have lived in');
+  let resp = prompt(['Guess a state that I have lived in']);
   console.log('attempts of states');
   let correct = false;
   for (let j = 0; j < states.length; j++) {
