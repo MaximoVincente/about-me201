@@ -17,7 +17,6 @@ function questionsAnswer(quest, answ) {
   }
 }
 
-
 //This Array stores the first 5 questions asked to the user
 let questions = ['Am I doing Javascript for Code 401?', 'Is Google my favorite Tech Company?',
   'Is becoming a Dev for Google my dream job?', 'Have I ever visited Yosemite National Park?',
