@@ -73,6 +73,7 @@ div{
         font-family: 'Noto Sans', sans-serif;
         border: 2px solid black;
         border-radius: 29px;
+    margin-bottom: 10px;
 
 }
 
@@ -123,6 +124,7 @@ div img{
 .places ol{
     margin-left: 100px;
     font-size: large;
+    line-height: 35px;
 }
 
 footer{
@@ -133,5 +135,9 @@ footer{
     align-items: center;
     color: rgb(201, 237, 237);
     background-color: rgb(26, 24, 24);
-    margin-top: 5px;
+    margin-top: 2px;
+}
+
+ul{
+    line-height: 40px;
 }
