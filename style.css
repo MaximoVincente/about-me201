@@ -1,11 +1,8 @@
 h1{
-    background-color: rgb(26, 24, 24);
-    color: rgb(201, 237, 237);
+    color: rgb(26, 24, 24);
     width: 872px;
     font-size: 50px;
     text-align: center;
-    border: 5px solid black;
-    border-radius: 29px;
     margin: auto;
     padding: 50px;
     font-family: 'Noto Sans', sans-serif;
@@ -27,12 +24,11 @@ main {
 
 .user_message{
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(50, 165, 173);
+    color: rgb(174, 213, 216);
     background-color: rgb(17, 18, 49);
     border-radius: 29px;
     width: auto;
     height: auto;
-    margin-top: 11px;
     font-style: italic;
     font-size: x-small;
     padding-bottom: 10px;
@@ -55,8 +51,6 @@ section img{
     height: auto;
     width: auto;
     margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 29px;
     padding: 11px;
     padding-bottom: 30px;
     text-align: start;
@@ -64,39 +58,48 @@ section img{
     font-size: x-large;
     line-height: 40px;
     word-spacing: 2px;   
-    color: rgb(129, 212, 212);
-    background-color: rgb(26, 24, 24);
+    color: rgb(26, 24, 24);
 }
 
 div{
+    width: 700px;
     margin-top: 90px auto;
-        font-family: 'Noto Sans', sans-serif;
-        border: 2px solid black;
-        border-radius: 29px;
+    margin-left: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    border: 2px solid black;
+    border-radius: 29px;
     margin-bottom: 10px;
 
 }
 
 div h3{
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 29px;
-        width: 80%;
-        align-items: center;
-        margin-left: 100px;
-        color:rgb(201, 237, 237);
-        background-color: rgb(26, 24, 24);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 29px;
+    width: 80%;
+    align-items: center;
+    margin-left: 50px;
+    color:rgb(201, 237, 237);
+    background-color: rgb(26, 24, 24);
+}
+
+div ul {
+    margin-left: 30px;
+    font-size: large;
+    line-height: 35px;
 }
 
 div img{
     width: 80%;
-        height: 400px;
-        border-radius: 29px;
-        margin-left: 100px;
+    height: 400px;
+    border-radius: 29px;
+    margin-left: 50px;
 }
 
 .places{
-    margin-top: 90px auto;    
+    width: 700px;
+    margin-top: 90px auto;   
+    margin-left: 100px; 
     font-family: 'Noto Sans', sans-serif;
     border: 2px solid black;
     border-radius: 29px;
@@ -108,7 +111,7 @@ div img{
     border-radius: 29px;
     width: 80%;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 50px;
     color: rgb(201, 237, 237);
     background-color: rgb(26, 24, 24);
     
@@ -118,17 +121,18 @@ div img{
     width: 80%;
     height: 400px;
     border-radius: 29px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .places ol{
-    margin-left: 100px;
+    margin-left: 30px;
     font-size: large;
     line-height: 35px;
 }
 
 footer{
-    text-align: center;
+    text-align: start;
+    padding-left: 29px;
     border: 2px solid black;
     border-radius: 29px;
     width: 80% auto;
